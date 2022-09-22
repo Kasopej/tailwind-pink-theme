@@ -18,7 +18,29 @@ module.exports = {
   ],
   module: {
     rules: [
-      { test: /\.css$/, use: ["style-loader", "css-loader"] },
+      {
+        test: /\.css$/,
+        use: [
+          "style-loader",
+          "css-loader",
+          {
+            loader: "postcss-loader",
+            options: {
+              postcssOptions: {
+                plugins: [
+                  [
+                    "postcss-preset-env",
+                    {
+                      tailwindcss: {},
+                      autoprefixer: {},
+                    },
+                  ],
+                ],
+              },
+            },
+          },
+        ],
+      },
       {
         test: /\.s[ac]ss$/,
         use: ["style-loader", "css-loader", "sass-loader"],
