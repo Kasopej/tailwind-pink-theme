@@ -1,12 +1,21 @@
 section {
     &#intro {
 
-
-        header {
-            background-image: url("../../images/banner-bg.png");
-            background-size: cover;
+        background-image: url("../../images/banner-bg.png");
+            background-size: contain;
             background-repeat: no-repeat;
-            background-origin: border-box;
-        }
+            background-origin: padding-box;
+            }
+            }
+            
+            .image-copy {
+                div {
+                    flex-basis: 100%;
+                    min-width: 100%;
+            
+                    div {
+                        flex-basis: 50%;
+                        min-width: 50%;
+                    }
     }
 }

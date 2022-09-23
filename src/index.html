@@ -7,39 +7,87 @@
     <title>Sass Landing Page</title>
 </head>
 <body>
-    <main class="px-2">
+    <main>
         <section id="intro">
-            <header>
-                <nav class="rounded-md flex justify-between content-center">
+            <header class="px-10 pt-3">
+                <nav class="rounded-full bg-white flex justify-between content-center px-4 py-4">
                     <img id="logo" src="../assets/images/logo.png" alt="Sofy Pink logo">
-                    <ul class="nav-list">
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
-                        <li><a href="#"></a></li>
+                    <ul class="list-none">
+                        <li class="inline px-3 align-middle"><a href="#">Home</a></li>
+                        <li class="inline px-3 align-middle"><a href="#">About</a></li>
+                        <li class="inline px-3 align-middle"><a href="#">Work Process</a></li>
+                        <li class="inline px-3 align-middle"><a href="#">Testimonials</a></li>
+                        <li class="inline px-3 align-middle"><a href="#">Pricing Tables</a></li>
+                        <li class="inline px-3 align-middle"><a href="#">Blog Entries</a></li>
+                        <li class="inline px-3 align-middle"><a href="#">Contact Us</a></li>
                     </ul>
                 </nav>
-                <div class="hero text-3xl text-center">
-                    <h2>
+                <div class="hero text-center text-white mt-40 mx-auto w-96">
+                    <h2 class="text-4xl">
                         We provide the best <em>strategy</em> to grow up your <em>business</em>
                     </h2>
-                    <p>Softy Pinko is a professional Bootstrap 4.0 theme designed by Template Mo for your company at absolutely free of charge</p>
-                    <button>discover more</button>
+                    <p class="my-6">Softy Pinko is a professional Bootstrap 4.0 theme designed by Template Mo for your company at absolutely free of charge</p>
+                    <button class="p-2 rounded-2xl bg-orange-800 uppercase">discover more</button>
                 </div>
             </header>
-            <div class="cards">
-                <div class="card"></div>
-                <div class="card"></div>
-                <div class="card"></div>
+            <div class="px-10 flex justify-center my-20">
+                <div class="card bg-white rounded-xl p-4 flex-1 shadow-lg">
+                    <figure class="text-center">
+                        <div class="bg-purple-700 rounded-full  inline-block p-3">
+                            <img class="my-6" src="../assets/images/featured-item-01.png" alt="strategy illustration">
+                        </div>
+                        <figcaption>
+                            <h4>Modern Strategy</h4>
+                            <p>Customize everything in this template to meet your website needs</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="card bg-white rounded-xl mx-4 p-4 flex-1 shadow-lg">
+                    <figure class="text-center">
+                        <div class="bg-purple-700 rounded-full inline-block p-3">
+                            <img class="my-6" src="../assets/images/featured-item-01.png" alt="strategy illustration">
+                        </div>
+                        <figcaption>
+                            <h4>Modern Strategy</h4>
+                            <p>Customize everything in this template to meet your website needs</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="card bg-white rounded-xl p-4 flex-1 shadow-lg">
+                    <figure class="text-center">
+                        <div class="bg-purple-700 rounded-full  inline-block p-3">
+                            <img class="my-6" src="../assets/images/featured-item-01.png" alt="strategy illustration">
+                        </div>
+                        <figcaption>
+                            <h4>Modern Strategy</h4>
+                            <p>Customize everything in this template to meet your website needs</p>
+                        </figcaption>
+                    </figure>
+                </div>
             </div>
-            <div>
-                <div class="img-box"><img alt=""></div>
-                <div class="img-text"></div>
-                <div class="img-box"><img alt=""></div>
-                <div class="img-text"></div>
+            <div class="px-10 flex image-copy justify-center flex-wrap">
+                <div class="flex">
+                    <div class="img-box pl-8">
+                        <img alt="" src="../assets/images/left-image.png">
+                    </div>
+                    <div class="img-text">
+                        <h5 class="font-bold text-xl mb-10"></h5>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, porro. Quas rerum provident molestiae quasi temporibus totam cupiditate velit eius dolorum labore, id dicta aspernatur error ut, aut, facilis amet?
+                        </p>
+                    </div>
+                </div>
+                <div class="flex">
+                    <div class="img-text">
+                        <h5 class="font-bold text-xl mb-10"></h5>
+                        <p>
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, porro. Quas rerum provident molestiae quasi temporibus totam cupiditate velit eius dolorum labore, id dicta aspernatur error ut, aut, facilis amet?
+                        </p>
+                    </div>
+                    <div class="img-box pl-6">
+                        <img alt="" src="../assets/images/right-image.png">
+                    </div>
+                </div>
             </div>
         </section>
         <section></section>
