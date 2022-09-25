@@ -57,7 +57,17 @@ module.exports = {
         test: /\.html$/,
         use: ["html-loader"],
       },
+      {
+        test: /\.(woff|woff2)$/,
+        use: ["url-loader"],
+      },
     ],
+  },
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "src"),
+      assets: path.resolve(__dirname, "assets"),
+    },
   },
   devServer: {
     static: {
