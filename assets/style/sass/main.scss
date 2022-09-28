@@ -6,15 +6,23 @@
 
         @media only screen and (min-width: 768px) {
             flex: 1 1 33%;
+            min-width: 33%;
         }
     }
 
     .column-6 {
         flex: 1 1 100%;
 
-        @media only screen and (min-width: 768px) {
-            flex: 1 1 50%;
+        @media only screen and (min-width: 640px) {
+            flex: 0 1 50%;
             min-width: 50%;
+        }
+    }
+
+    .column-lg-4 {
+        @media only screen and (min-width: 768px) {
+            flex: 0 1 33%;
+            min-width: 33%;
         }
     }
 }
@@ -30,8 +38,27 @@ header {
         box-shadow: -5px 0 10px 0 rgba($color: #3f3e3e, $alpha: 0.05), 5px 0 10px 0 rgba($color: #3f3e3e, $alpha: 0.05),
             0 -5px 10px 0 rgba($color: #3f3e3e, $alpha: 0.05), 0 2px 10px 0 rgba($color: #3f3e3e, $alpha: 0.05);
 
+        @media only screen and (min-width: 640px){
+            width: calc(100% - 8rem);
+            margin-left: -1rem;
+        }
         @media only screen and (min-width: 768px) {
-            width: calc(100% - 10rem);
+            width: calc(100% - 5rem);
+            margin-left: -1rem;
+        }
+        @media only screen and (min-width: 992px) {
+            width: calc(100% - 3rem);
+            margin-left: 0;
+        }
+        @media only screen and (min-width: 1280px) {
+            width: calc(100% - 12rem);
+        }     
+
+        ul{
+            font-size: 13px;
+        }
+        li.active{
+            color: $secondary_color;
         }
     }
 }
@@ -52,8 +79,8 @@ section {
         background-origin: padding-box;
         background-position: center top;
 
-        @media only screen and (min-width: 768px) {
-            background-size: 100%;
+        @media only screen and (min-width: 1280px) {
+            background-size: 100% 105vh;
         }
 
         button {
@@ -65,20 +92,14 @@ section {
 
 .value-cards {
     .card {
-        box-shadow: -10px 0 30px 0 rgba($color: #3f3e3e, $alpha: 0.05),
-            10px 0 30px 0 rgba($color: #3f3e3e, $alpha: 0.05), 0 -10px 30px 0 rgba($color: #3f3e3e, $alpha: 0.05),
-            0 10px 30px 0 rgba($color: #3f3e3e, $alpha: 0.05);
+        box-shadow: 0 0 20px 20px rgba($color: #3f3e3e, $alpha: 0.05)
+    }
 
-        &:nth-of-type(odd) {
-            figure > div {
-                background-color: $primary_color;
-            }
-        }
-        &:nth-of-type(even) {
-            figure > div {
-                background-color: $secondary_color;
-            }
-        }
+    div.img-rounded {
+        background-color: $primary_color;
+    }
+    div.img-rounded.active {
+        background-color: $secondary_color;
     }
 }
 

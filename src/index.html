@@ -10,11 +10,11 @@
 <body>
     <main>
         <section id="intro">
-            <header class="px-4 md:px-20 pt-8">
-                <nav class="fixed rounded-full bg-white flex justify-between content-center p-6">
+            <header class="px-4 sm:px-20 md:px-14 lg:px-6 xl:px-24 pt-8">
+                <nav class="fixed rounded-full bg-white flex justify-between items-center p-6">
                     <img id="logo" height="80px" src="../assets/images/logo.png" alt="Sofy Pink logo">
-                    <ul class="list-none hidden md:block">
-                        <li class="inline px-3 align-middle"><a href="#">Home</a></li>
+                    <ul class="list-none hidden lg:block font-medium">
+                        <li class="inline px-3 align-middle active"><a href="#">Home</a></li>
                         <li class="inline px-3 align-middle"><a href="#">About</a></li>
                         <li class="inline px-3 align-middle"><a href="#">Work Process</a></li>
                         <li class="inline px-3 align-middle"><a href="#">Testimonials</a></li>
@@ -23,29 +23,20 @@
                         <li class="inline px-3 align-middle"><a href="#">Contact Us</a></li>
                     </ul>
                 </nav>
-                <div class="hero text-center text-white mt-64 md:mt-40 mx-auto w-11/12 md:w-4/12">
-                    <h2 class="text-2xl font-semibold md:text-4xl">
+                <div class="hero text-center text-white mt-40 sm:mt-64 lg:mt-40 mx-auto w-11/12 lg:w-8/12 xl:w-7/12">
+                    <h2 class="text-2xl lg:text-4xl font-semibold md:font-normal lg:font-medium">
                         We provide the best <strong>strategy</strong> <br> to grow up your <strong>business</strong>
                     </h2>
-                    <p class="my-8 text-sm">Softy Pinko is a professional Tailwind version of the Bootstrap them designed by Template Mo for your company at absolutely no charge</p>
+                    <p class="my-8 text-sm lg:px-2 xl:px-14">Softy Pinko is a professional Tailwind version of the Bootstrap them designed by Template Mo for your company at absolutely no charge</p>
                     <button class="py-2 px-6 rounded-3xl bg-orange-800 uppercase text-sm">discover more</button>
                 </div>
             </header>
-            <div class="value-cards text-center px-4 md:px-20 flex flex-wrap md:flex-nowrap justify-center mt-96 mb-16 md:my-24">
-                <div class="card column-4 bg-white rounded-xl mb-4 md:mb-0 px-4 py-7">
-                    <figure>
-                        <div class="mb-6 rounded-full inline-block py-5 px-4">
-                            <img class="mx-auto" src="../assets/images/featured-item-01.png" alt="strategy illustration">
-                        </div>
-                        <figcaption>
-                            <h4 class="mb-4 text-lg font-medium text-gray-900">Modern Strategy</h4>
-                            <p class="text-sm font-medium text-gray-400">Customize everything in this template to meet your website needs</p>
-                        </figcaption>
-                    </figure>
-                </div>
-                <div class="card column-4 bg-white rounded-xl mb-4 md:mb-0 md:mx-4 px-4 py-7">
-                    <figure>
-                        <div class="mb-6 rounded-full inline-block py-5 px-4">
+
+            <!-- Cards -->
+            <div class="value-cards text-center px-4 sm:px-20 md:px-14 lg:px-6 xl:px-24 flex flex-wrap lg:flex-nowrap mt-96 sm:mt-40 lg:mt-2 mb-16">
+                <div class="column-6 column-lg-4 mb-8 sm:pr-4">
+                    <figure class="card rounded-xl bg-white px-4 py-7">
+                        <div class="mb-6 img-rounded rounded-full inline-block py-5 px-4">
                             <img class="mx-auto" src="../assets/images/featured-item-01.png" alt="strategy illustration">
                         </div>
                         <figcaption>
@@ -54,9 +45,20 @@
                         </figcaption>
                     </figure>
                 </div>
-                <div class="card column-4 bg-white rounded-xl mb-4 md:mb-0 px-4 py-7">
-                    <figure>
-                        <div class="mb-6 rounded-full inline-block py-5 px-4">
+                <div class="column-6 column-lg-4 mb-8 sm:pl-4 md:px-4">
+                    <figure class="card rounded-xl bg-white px-4 py-7">
+                        <div class="mb-6 img-rounded active rounded-full inline-block py-5 px-4">
+                            <img class="mx-auto" src="../assets/images/featured-item-01.png" alt="strategy illustration">
+                        </div>
+                        <figcaption>
+                            <h4 class="mb-6 text-lg font-medium text-gray-900">Modern Strategy</h4>
+                            <p class="text-xs font-medium text-gray-400">Customize everything in this template to meet your website needs</p>
+                        </figcaption>
+                    </figure>
+                </div>
+                <div class="column-6 column-lg-4 mb-8 sm:pr-4 md:pr-0 md:pl-4">
+                    <figure class="card rounded-xl bg-white px-4 py-7">
+                        <div class="mb-6 img-rounded rounded-full inline-block py-5 px-4">
                             <img class="mx-auto" src="../assets/images/featured-item-01.png" alt="strategy illustration">
                         </div>
                         <figcaption>
@@ -66,27 +68,29 @@
                     </figure>
                 </div>
             </div>
-            <div class="image-copy px-4 md:px-20 flex justify-center flex-wrap">
-                <div class="flex flex-wrap pb-32 md:pb-0 border-b">
-                    <div class="img-box column-6 px-10 mb-10">
-                        <img alt="" src="../assets/images/left-image.png">
+
+            <!-- Image with text (copy) -->
+            <div class="image-copy px-4 sm:px-20 md:px-14 lg:px-6 xl:px-24 flex justify-center flex-wrap">
+                <div class="flex flex-wrap pb-32 border-b">
+                    <div class="img-box column-6 mb-10">
+                        <img alt="discussing illustration" class="m-auto" src="../assets/images/left-image.png">
                     </div>
                     <div class="img-text column-6">
                         <h5 class="font-medium text-2xl mb-10">Let's discuss about your project</h5>
-                        <p class="text-gray-600 font-normal text-base">
+                        <p class="text-gray-500 font-normal text-base">
                             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, porro. Quas rerum provident molestiae quasi temporibus totam cupiditate velit eius dolorum labore, id dicta aspernatur error ut, aut, facilis amet?
                         </p>
                     </div>
                 </div>
-                <div class="flex flex-wrap mt-28 md:mt-0 mb-32">
+                <div class="flex flex-wrap mt-28 mb-32">
                     <div class="img-text column-6 mb-16">
-                        <h5 class="font-medium text-2xl mb-4">Let's discuss about your project</h5>
-                        <p class="text-gray-600 font-normal text-base">
+                        <h5 class="font-medium text-2xl mb-4">We can help you grow your business</h5>
+                        <p class="text-gray-500 font-normal text-base">
                             Lorem ipsum, dolor sit amet consectetur adipisicing elit. Vel, porro. Quas rerum provident molestiae quasi temporibus totam cupiditate velit eius dolorum labore, id dicta aspernatur error ut, aut, facilis amet?
                         </p>
                     </div>
-                    <div class="img-box column-6 px-10">
-                        <img alt="" src="../assets/images/right-image.png">
+                    <div class="img-box column-6">
+                        <img alt="discussing illustration " class="m-auto" src="../assets/images/right-image.png">
                     </div>
                 </div>
             </div>
