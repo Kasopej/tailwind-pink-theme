@@ -85,14 +85,19 @@ header {
         }     
     }
     nav.nav-mobile-style {
-        border-bottom-left-radius: 0;
-        border-bottom-right-radius: 0;
-        border-top-left-radius: 40px;
-        border-top-right-radius: 40px;
+        @media only screen and (max-width: 991px) {
+            border-bottom-left-radius: 0;
+            border-bottom-right-radius: 0;
+            border-top-left-radius: 40px;
+            border-top-right-radius: 40px;
+        }
     }
     div.mobile-menu-open{
         position: absolute;
         display: block;
+        @media only screen and (min-width: 992px) {
+            display: none;
+        }
         li:hover{
             cursor: pointer;
             background-color: rgba(128, 128, 128, 0.212);
