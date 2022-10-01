@@ -7,6 +7,6 @@ function transitionImageIntoView() {
 
 document.querySelectorAll(".image-copy").forEach((el) => {
   el.addEventListener("mouseenter", function () {
-    transitionImageIntoView.call(el);
+    transitionImageIntoView.call(this);
   });
 });
