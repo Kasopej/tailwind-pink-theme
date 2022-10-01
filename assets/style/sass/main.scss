@@ -57,8 +57,13 @@ header {
         ul{
             font-size: 13px;
         }
-        li.active{
-            color: $secondary_color;
+        li{
+            &.active{
+                color: $secondary_color;
+            }
+            &:hover{
+                color: $secondary_color;
+            }
         }
     }
 }
@@ -79,6 +84,10 @@ section {
         background-origin: padding-box;
         background-position: center top;
 
+        @media only screen and (min-width: 640px) {
+            background-size: 100% 120vh;
+        }
+
         @media only screen and (min-width: 1280px) {
             background-size: 100% 105vh;
         }
@@ -86,20 +95,25 @@ section {
         button {
             background-color: $secondary_color;
             font-size: 13px;
+            &:hover{
+                background-color: $primary_color
+            }
         }
     }
 }
 
 .value-cards {
     .card {
-        box-shadow: 0 0 20px 20px rgba($color: #3f3e3e, $alpha: 0.05)
-    }
-
-    div.img-rounded {
-        background-color: $primary_color;
-    }
-    div.img-rounded.active {
-        background-color: $secondary_color;
+        box-shadow: 0 0 20px 20px rgba($color: #3f3e3e, $alpha: 0.05);
+        div.img-rounded {
+            background-color: $primary_color;
+        }
+        &:hover{
+            div.img-rounded {
+                background-color: $secondary_color;
+            }
+            cursor: pointer;
+        }
     }
 }
 
