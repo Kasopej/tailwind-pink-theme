@@ -13,10 +13,15 @@ function toggleNavMobileStyle() {
   this.classList.toggle("nav-mobile-style");
 }
 
+// Eventlistener for triggering transition
 document.querySelectorAll(".image-copy").forEach((el) => {
-  el.addEventListener("mouseenter", function () {
-    transitionImageIntoView.call(this);
-  });
+  el.addEventListener(
+    "mouseenter",
+    function () {
+      transitionImageIntoView.call(this);
+    },
+    { once: true }
+  );
 });
 
 document.querySelector(".hamburger-icon").addEventListener("click", () => {
