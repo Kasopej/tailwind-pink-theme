@@ -84,14 +84,25 @@ header {
             width: calc(100% - 12rem);
         }     
     }
-    nav.nav-mobile-style {
+    nav.nav-dropdown-style {
         @media only screen and (max-width: 991px) {
             border-bottom-left-radius: 0;
             border-bottom-right-radius: 0;
             border-top-left-radius: 40px;
             border-top-right-radius: 40px;
         }
+        .hamburger-icon {
+            span{
+                display: none;
+            }
+            span.close-mobile-menu {
+                display: initial;
+                background: none;
+                font-family: Helvetica;
+            }
+        }
     }
+    // class below is triggered by javascript when hamburger icon is clicked
     div.mobile-menu-open{
         position: absolute;
         display: block;
@@ -173,7 +184,7 @@ section {
             &:nth-of-type(2) {
                 transform: translateX(700px);
             }
-            transition: transform 2s;
+            transition: transform 1500ms ease-out;
         }
     
         &.inview{

@@ -9,8 +9,8 @@ function openMobileMenu() {
   this.classList.toggle("mobile-menu-open");
 }
 
-function toggleNavMobileStyle() {
-  this.classList.toggle("nav-mobile-style");
+function toggleNavDropdownStyle() {
+  this.classList.toggle("nav-dropdown-style");
 }
 
 // Eventlistener for triggering transition
@@ -28,5 +28,5 @@ document.querySelector(".hamburger-icon").addEventListener("click", () => {
   const mobileMenu = document.querySelector(".mobile-menu");
   const nav = document.getElementsByTagName("nav")[0];
   openMobileMenu.call(mobileMenu);
-  toggleNavMobileStyle.call(nav);
+  toggleNavDropdownStyle.call(nav);
 });
